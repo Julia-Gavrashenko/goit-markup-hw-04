@@ -152,7 +152,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   background-color: var(--img-background-color);
-  background-image: url(../image/hero-bg-overlay.png), url(../image/hero-bg.jpg);
+  background-image: url(../image/hero-bg-overlay-1.webp), url(../image/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
