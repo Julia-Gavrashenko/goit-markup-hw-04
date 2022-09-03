@@ -147,8 +147,15 @@ img {
 /* Studio page styles */
 /*  hero section styles */
 .hero {
-  background-color: var(--img-background-color);
+ 
   max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--img-background-color);
+  background-image: url(../image/hero-bg-overlay.png), url(../image/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-container {
