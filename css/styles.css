@@ -222,6 +222,20 @@ img {
   display: flex;
 }
 
+.feature-item::before{
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../image/);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-background-color);
+  margin-bottom: 30px;
+  outline: 1px solid red;
+
+}
+
 .feature-list > .feature-item:not(:last-child) {
   margin-right: 30px;
 }
