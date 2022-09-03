@@ -18,6 +18,7 @@
   --light-fill-color: #ffffff;
   --light-border-color: #eeeeee;
   --img-background-color:#C4C4C4;
+  --icon-light-color:#AFB1B8;
 }
 
 /* base styles */
@@ -320,12 +321,46 @@ img {
 }
 
 .team-list-subtitle {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
+/* social-links */
+
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socials-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-fill-color);
+  border-radius: 50%;
+}
+.socials-icon{
+  fill: var(--icon-light-color);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-background-color);
+}
+.socials-link:hover .socials-icon,
+ .socials-link:focus .socials-icon {
+  fill:var(--light-fill-color);
+  
+ }
+
+
 
 /* Portfolio page styles */
 
