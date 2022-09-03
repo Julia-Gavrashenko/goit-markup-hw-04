@@ -17,6 +17,7 @@
   --dark-fill-color: #2f303a;
   --light-fill-color: #ffffff;
   --light-border-color: #eeeeee;
+  --img-background-color:#C4C4C4;
 }
 
 /* base styles */
@@ -146,7 +147,8 @@ img {
 /* Studio page styles */
 /*  hero section styles */
 .hero {
-  background-color: var(--dark-fill-color);
+  background-color: var(--img-background-color);
+  max-width: 1600px;
 }
 
 .hero-container {
