@@ -222,19 +222,34 @@ img {
   display: flex;
 }
 
-.feature-item::before{
+.feature-item::before {
   display: block;
   content: "";
   height: 120px;
-  background-image: url(../image/);
-  background-size: contain;
+  margin-bottom: 30px;
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondary-background-color);
-  margin-bottom: 30px;
-  outline: 1px solid red;
-
+  border-radius: 4px;
 }
+
+.icon-antenna::before {
+  background-image: url(../image/icon-antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../image/icon-clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../image/icon-diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../image/icon-astronaut.svg);
+}
+
 
 .feature-list > .feature-item:not(:last-child) {
   margin-right: 30px;
