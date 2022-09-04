@@ -378,32 +378,30 @@ img {
   justify-content: center;
 }
 
-.clients-item {
+.clients-link {
   display: flex;
   width: 170px;
   height: 92px;
   align-items: center;
   justify-content: center;
-  /* background-color: var(--light-fill-color); */
-  border: 1px solid #AFB1B8;
+  background-color: var(--light-fill-color);
+  border: 1px solid var(--icon-light-color);
   border-radius: 4px;
 }
 
-.clients-icon {
+ .clients-icon {
   fill: var(--icon-light-color);
+ }
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-background-color);
 }
 
-.clients-item:hover,
-.clients-item:focus {
- border-color: var(--accent-background-color);
-}
-
-.clients-item:hover .clients-icon,
-.clients-item:focus .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-background-color);
-
 }
-
 /* Portfolio page styles */
 
 /* buttons style */
