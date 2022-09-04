@@ -239,7 +239,25 @@ img {
   display: flex;
 }
 
-.feature-item::before {
+.feature-icons{
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  /* .socials-icon {
+    fill: var(--icon-light-color);
+  } */
+
+
+/* .feature-item::before {
   display: block;
   content: "";
   height: 120px;
@@ -265,7 +283,7 @@ img {
 
 .icon-astronaut::before {
   background-image: url(../image/icon-astronaut.svg);
-}
+} */
 
 
 .feature-list > .feature-item:not(:last-child) {
@@ -534,7 +552,6 @@ img {
 }
 
 .addres {
-  margin-right: ;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
