@@ -17,8 +17,9 @@
   --dark-fill-color: #2f303a;
   --light-fill-color: #ffffff;
   --light-border-color: #eeeeee;
-  --img-background-color:#C4C4C4;
-  --icon-light-color:#AFB1B8;
+  --img-background-color: #c4c4c4;
+  --icon-light-color: #afb1b8;
+  --icon-grey-color: #757575;
 }
 
 /* base styles */
@@ -106,22 +107,9 @@ img {
   color: var(--accent-text-color);
 }
 
-.header .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .current {
   color: var(--accent-text-color);
 }
-
-
-
-
-
-
-
 
 /* navigation */
 .site-nav,
@@ -143,32 +131,47 @@ img {
 }
 
 /* contacts */
-.site-info .list-item:not(:last-child) {
+/* .site-info .list-item:not(:last-child) {
   margin-right: 50px;
+  display: flex;
+} */
+
+.site-info {
+  gap: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .header-contacts {
-  display: flex;
   margin-left: auto;
 }
 
-
-.header-contacts .header-icons {
-  display: block;
+.header-contacts .link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
+.header-icon {
+  margin-right: 10px;
+  fill: var(--icon-grey-color);
+}
 
-
+.header-icon:hover,
+.header-icon:focus {
+  fill: var(--accent-background-color);
+}
 
 /* Studio page styles */
 /*  hero section styles */
 .hero {
- 
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--img-background-color);
-  background-image: url(../image/hero-bg-overlay-1.webp), url(../image/hero-bg.jpg);
+  background-image: url(../image/hero-bg-overlay-1.webp),
+    url(../image/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -221,7 +224,7 @@ img {
   padding-bottom: 94px;
 }
 .feature-title {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
@@ -239,52 +242,15 @@ img {
   display: flex;
 }
 
-.feature-icons{
+.feature-icons {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
-}
-
-.feature-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-  
-  /* .socials-icon {
-    fill: var(--icon-light-color);
-  } */
-
-
-/* .feature-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--secondary-background-color);
-  border-radius: 4px;
-}
-
-.icon-antenna::before {
-  background-image: url(../image/icon-antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../image/icon-clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../image/icon-diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../image/icon-astronaut.svg);
-} */
-
 
 .feature-list > .feature-item:not(:last-child) {
   margin-right: 30px;
@@ -380,7 +346,7 @@ img {
   background-color: var(--light-fill-color);
   border-radius: 50%;
 }
-.socials-icon{
+.socials-icon {
   fill: var(--icon-light-color);
 }
 
@@ -389,12 +355,11 @@ img {
   background-color: var(--accent-background-color);
 }
 .socials-link:hover .socials-icon,
- .socials-link:focus .socials-icon {
-  fill:var(--light-fill-color);
-  
- }
+.socials-link:focus .socials-icon {
+  fill: var(--light-fill-color);
+}
 
- /* clients section styles */
+/* clients section styles */
 
 .clients-title {
   margin-bottom: 50px;
@@ -423,9 +388,9 @@ img {
   border-radius: 4px;
 }
 
- .clients-icon {
+.clients-icon {
   fill: var(--icon-light-color);
- }
+}
 
 .clients-link:hover,
 .clients-link:focus {
@@ -511,8 +476,8 @@ img {
 }
 
 .projects-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* footer styles */
@@ -525,9 +490,9 @@ img {
   background-color: var(--dark-fill-color);
 }
 
-.footer-addres-section{
+.footer-addres-section {
   padding-top: 60px;
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-socials-section {
@@ -577,14 +542,13 @@ img {
 
 .footer-title {
   margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--light-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
 }
-
 
 .footer-socials {
   display: flex;
