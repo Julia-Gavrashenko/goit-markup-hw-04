@@ -105,7 +105,7 @@ img {
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-text-color);
-}
+}  
 
 .current {
   color: var(--accent-text-color);
@@ -131,11 +131,6 @@ img {
 }
 
 /* contacts */
-/* .site-info .list-item:not(:last-child) {
-  margin-right: 50px;
-  display: flex;
-} */
-
 .site-info {
   gap: 30px;
   display: flex;
@@ -158,10 +153,11 @@ img {
   fill: var(--icon-grey-color);
 }
 
-.header-icon:hover,
-.header-icon:focus {
-  fill: var(--accent-background-color);
-}
+
+.link:hover .header-icon,
+.link:focus .header-icon {
+   fill: var(--accent-background-color);
+} 
 
 /* Studio page styles */
 /*  hero section styles */
