@@ -118,39 +118,6 @@ img {
 
 
 
-/* header-icons
-.header-contacts {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
-.socials-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--light-fill-color);
-  border-radius: 50%;
-}
-
-.socials-icon {
-  fill: var(--icon-light-color);
-}
-
-.socials-link:hover,
-.socials-link:focus {
-  background-color: var(--accent-background-color);
-}
-
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
-  fill: var(--light-fill-color);
-
-}
- */
-
 
 
 
@@ -184,6 +151,14 @@ img {
   display: flex;
   margin-left: auto;
 }
+
+
+.header-contacts .header-icons {
+  display: block;
+}
+
+
+
 
 /* Studio page styles */
 /*  hero section styles */
