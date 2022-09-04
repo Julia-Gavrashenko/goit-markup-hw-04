@@ -440,6 +440,7 @@ img {
 .list .button:focus {
   background-color: var(--accent-background-color);
   color: var(--light-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* project-cards style */
@@ -475,12 +476,29 @@ img {
   border-left: 1px solid #eeeeee;
 }
 
+.projects-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
 /* footer styles */
+
+.footer-container {
+  display: flex;
+}
 
 .footer {
   background-color: var(--dark-fill-color);
+}
+
+.footer-addres-section{
   padding-top: 60px;
-  padding-bottom: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-socials-section {
+  margin-top: 72px;
+  margin-left: 70px;
 }
 
 .footer-logo {
@@ -500,6 +518,7 @@ img {
 }
 
 .addres {
+  margin-right: ;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -532,7 +551,6 @@ img {
     text-transform: uppercase;
     color: var(--light-text-color);
 }
-
 
 
 .footer-socials {
